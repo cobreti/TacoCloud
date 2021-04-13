@@ -1,19 +1,18 @@
-package tacos.web;
+package com.example.tacocloud.web;
 
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import tacos.Ingredient;
-import tacos.Ingredient.Type;
-import tacos.Taco;
+import com.example.tacocloud.tacos.Ingredient;
+import com.example.tacocloud.tacos.Ingredient.Type;
+import com.example.tacocloud.tacos.Taco;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Slf4j
+//@Slf4j
 @Controller
 @RequestMapping("/design")
 public class DesignTacoController {
