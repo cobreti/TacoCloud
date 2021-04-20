@@ -17,6 +17,10 @@
             </div>
         </div>
 
+        <span class="validationError"
+              th:if="${#fields.hasErrors('ingredients')}"
+              th:errors="*{ingredients}">CC Num Error</span>
+
         <div class="ingredient-group" id="proteins">
             <h3>Pick your protein:</h3>
             <div th:each="ingredient : ${protein}">
